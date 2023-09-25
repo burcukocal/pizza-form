@@ -1,0 +1,308 @@
+/*header*/
+.home-header {
+    background-image: url('../Assets/mvp-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+}
+
+.header-title {
+    text-align: center;
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header-title p {
+    font-family: 'Satisfy', cursive;
+    color: #FDC913;
+    font-size: 1.6rem;
+    margin-bottom: -15px;
+}
+
+.header-title h2 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    line-height: 1em;
+    color: #FAF7F2;
+}
+
+.header-title button {
+    background: #FDC913;
+    padding: 6px 30px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.header-title button:hover {
+    color: #FDC913;
+    background-color: black;
+}
+
+/*navbar*/
+
+.nav-bar {
+    min-height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-icons {
+    border-radius: 40px;
+    padding: 4px 10px;
+    min-width: 200px;
+    display: flex;
+    margin-left: 3px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: white;
+    margin-right: 5px;
+}
+
+.nav-icons span {
+    padding-left: 4%;
+    font-weight:bold;
+}
+
+/*content*/
+.menu-box{
+    padding-top: 2%;
+    padding-bottom: 8%;
+    margin: auto;
+    width: 80vw;
+    color: white;
+    text-align: left;
+}
+.box1{
+    background-image: url("../Assets/adv-aseets/kart-1.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 62vh;
+    padding: 3rem;      
+}
+.box1 h2 {
+    font-family: 'Quattrocento', serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.box1 p {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+    letter-spacing: .6px;
+}
+ 
+.box2, .box3{
+    background-image: url("../Assets/adv-aseets/kart-2.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    height: 30vh;
+    padding: 2rem;
+}
+
+.box2 h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.box3{
+    background-image: url("../Assets/adv-aseets/kart-3.png");
+    margin-top: 2%;
+}
+.box3 span{
+    color: #CE2829;
+}
+.box3 h2{
+    color: #292929;
+}
+
+.box2:hover,.box3:hover,.box1:hover {
+    box-shadow: 0px 0px 5px 3px rgb(182, 182, 182);
+}
+
+.box3 h2 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #333;
+}
+
+.order-button {
+    background: rgb(255, 255, 255);
+    padding: 10px 27px;
+    border: none;
+    border-radius: 40px;
+    font-size: .8em;
+    color: red;
+    font-weight: bold;
+}
+
+.home-filters {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+.header-icons.active {
+    background: #1f1f1f;
+    padding: 10px;
+    border-radius: 40px;
+    color: white;
+    width: 8vw;
+}
+
+.menu-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 4%;
+}
+
+.food-cards>div {
+    background: white;
+}
+
+.food-cards > div h4 {
+    padding: 15px 0 5px 0px;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.food-cards > img {
+    width: 300px;
+}
+
+.food-info-price {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #292929;
+    
+}
+
+.item-info{
+    display: flex;
+    justify-content: space-between;
+    font-family:'Barlow', sans-serif;
+    color: #1B1B1BB2;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 29px;
+    padding-top: 2%;
+    gap: 10px;
+}
+
+
+.home-food-filter p{
+    font-family: 'Satisfy', cursive;
+    color: rgb(214, 14, 14);
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.home-food-filter h3 {
+    color: #131313;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: -15px;
+}
+
+/*footer*/
+.footer {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 40px 0;
+}
+
+.footer-menu h4 {
+    font-size: 1.4rem;
+    margin-bottom: 10%;
+}
+
+.footer-menu:nth-child(1) img {
+    float:left
+}
+
+.footer-menu:nth-child(1) p {
+    padding: 10px 0;
+}
+
+.footer-menu {
+    width: 33.33%;
+    max-width: 300px;
+    margin: auto;
+    color: white;
+    text-align: left;
+}
+
+.footer-menu span {
+    padding-right: 5px;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footer-menu li {
+    padding-bottom: 5%;
+}
+
+.footer-menu > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-menu > div img {
+    width: 33.33%;
+    height: 80px;
+    padding: 4px;
+    cursor:pointer
+}
+
+.footer-menu h3 {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.copyright {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: #c1bfbf;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    border-top: 1px solid #8080805e;
+}
+
+.copyright p {
+    width: 75%;
+    text-align: left;
+    padding-left: 6%;
+}
