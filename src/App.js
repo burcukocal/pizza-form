@@ -2,6 +2,7 @@ import './App.css';
 import { Switch, Route } from "react-router-dom";
 import HomePage from './page/HomePage';
 import OrderPage from './page/OrderPage';
+import SuccessPage from './page/SuccessPage';
 
 function App() {
   return (
@@ -10,8 +11,11 @@ function App() {
         <Route exact path="/">
           <HomePage />
         </Route>
-        <Route>
+        <Route path="/pizza">
           <OrderPage />
+        </Route>
+        <Route>
+          <SuccessPage path="/success" />
         </Route>
       </Switch>
      

@@ -18,39 +18,26 @@
     display: flex;
     justify-content: flex-start;
 }
+.contents nav a{
+    text-decoration: none;
+}
 
 
 .order-form-container {
-    width: 40%;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.size-dough {
-    width: 100;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.pizza-boyutu {
     width: 50%;
-    font-size: 1rem;
-    margin: 5% 0;
+    margin: 2% auto;
+    text-align: center;
 }
 
-.pizza-boyutu h5 {
-    margin: 0;
-}
-
-.pizza-boyutu input {
+.pizza-size input {
     display: none;
 }
+.pizza-size h5{
+    text-align: left;
+    margin-left: 20%;
+}
 
-.pizza-boyutu label {
+.pizza-size label {
     margin-right: 8%;
     color: #5F5F5F;
     background-color: #FAF7F2;
@@ -63,44 +50,40 @@
     align-items: center;
 }
 
-.pizza-boyutu input:checked+label {
+.pizza-size input:checked+label {
     background-color: #FDC913;
     border-radius: 100px;
 }
 
-.hamur {
-    width: 50%;
-    font-size: 1rem;
-    margin: 5% 0;
+.dough h5 {
+    text-align: left;
 }
 
-.hamur h5 {
-    margin: 0;
-}
-
-.hamur select {
+.dough select {
     height: 3vw;
     background-color: #FAF7F2;
     border: #FAF7F2;
     color: #5F5F5F;
-    width: 100%;
+    width: 18vw;
+    float: left;
 }
 
-.ek-malzemeler {
+.extras {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 3% 0;
+    margin: 3% auto;
+    padding-left: 10%;
 }
 
-.ek-malzemeler .baslik {
+.extras .title {
     width: 100%;
     text-align: left;
     margin-bottom: 0;
 }
 
-.ek-malzemeler p {
+.extras p {
     width: 100%;
     text-align: left;
     margin-bottom: 1%;
@@ -128,8 +111,8 @@
 
 .checkmark {
     display: inline-block;
-    height: 5vh;
-    width: 23%;
+    height: 6vh;
+    width: 3vw;
     background-color: #FAF7F2;
     border-radius: 5px;
     margin-right: 5%;
@@ -164,62 +147,68 @@
     transform: rotate(45deg);
 }
 
-.siparis-notu {
-    width: 100%;
+.order-note {
+    width: 90%;
     padding-bottom: 3%;
     border-bottom: 1px solid #5F5F5F;
+    min-height: calc(4.5em + .75rem + 2px);
+    border: none;
+    margin-left: 10%;
+}
+.order-note h5{
+    text-align: left;
+    margin-bottom: 3%;
 }
 
-.siparis-notu input {
-    width: 100%;
-    height: 3vw;
-    background-color: #FAF7F2;
+.order-note input {
+    background-color: #faf7f2ee;
     border: #FAF7F2;
 }
 
-.adet-toplam {
-    width: 100;
+.count-total {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 5% 0;
+    
 }
 
-.adet-button {
-    width: 30%;
-    margin-left: 3%;
+.count-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 10%;
 }
 
-.adet-button input {
-    width: 15%;
+.count-button input {
+    width: 3.5vw;
     height: 3.5vw;
     background-color: #FAF7F2;
     border: #FAF7F2;
 }
 
-.adet-button button {
-    width: 20%;
+.count-button button {
+    width: 3vw;
     height: 3.5vw;
     background-color: #FAF7F2;
     border: #FAF7F2;
 }
 
-.siparis-tutari {
-    width: 65%;
+.order-amount {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #FAF7F2;
+    width: 20vw;
 }
 
-.siparis-tutari h3 {
-    width: 100%;
-    margin: 0% 15%;
-    margin-top: 6%;
+.order-amount h3 {
+    margin: 10% auto;
 }
 
-.siparis-tutari button {
+.order-amount button {
     width: 100%;
     text-align: center;
     height: 3vw;
@@ -227,19 +216,14 @@
     border: #FDC913;
 }
 
-.fiyat {
+.price {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 0 15%;
 }
 
-.fiyat p {
+.price p {
     width: 50%;
-    margin: 4% 0;
 }
 
-a {
-    text-decoration: none;
-}
